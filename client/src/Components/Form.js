@@ -10,6 +10,8 @@ class Form extends React.Component {
     return(
       <form action="" method="post" id="submissionForm">
 
+        <h2>Photo Submission</h2>
+
         <fieldset>
           <legend>Personal Details</legend>
           <div>
@@ -42,9 +44,18 @@ class Form extends React.Component {
             <input type='text' name="hashtags" id="hashtags" required />
           </div>
           <div>
-            <input type="file" name="filepath" id="filepath" accept="image/png, image/jpeg" />
+            <input type="file" name="filepath" id="filepath" accept="image/png, image/jpeg" required />
           </div>
         </fieldset>
+
+        <fieldset>
+          <legend>Terms and Conditions</legend>
+          <p>By using this service you agree to abide by the terms and conditions and relinquish all your money.</p>
+          <input type="checkbox" name="tandc" id="tandc" required />
+        </fieldset>
+        <div>
+          <button type="submit">Submit photo</button> 
+        </div>
       </form>
     ) 
   }
