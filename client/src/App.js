@@ -1,5 +1,6 @@
 import React from 'react';
-import Template from './Components/Component'
+import Template from './Components/Component';
+import Form from './Components/Form';
 
 class App extends React.Component {
   constructor(props) {
@@ -13,6 +14,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>Client</h1>
+        <Form />
         <Template/>
       </div>
     );
