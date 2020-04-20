@@ -14,19 +14,19 @@ class Form extends React.Component {
 
         <fieldset>
           <legend>Personal Details</legend>
-          <div>
+          <div className="field-grouping">
             <label for="first_name">First Name</label>
             <input type='text' name="first_name" id="first_name" required />
           </div>
-          <div>
+          <div className="field-grouping">
             <label for="last_name">Last Name</label>
             <input type='text' name="last_name" id="last_name" required />
           </div>
-          <div>
+          <div className="field-grouping">
             <label for="email">Email</label>
             <input type='email' name="email" id="email" required />
           </div>
-          <div>
+          <div className="field-grouping">
             <label for="instagram_handle">Instagram Handle</label>
             <input type='text' name="instagram_handle" id="instagram_handle" required />
           </div>
@@ -35,15 +35,15 @@ class Form extends React.Component {
         <fieldset>
           <legend>Photo for Submission</legend>
 
-          <div>
+          <div className="field-grouping">
             <label for="description">Post Description</label>
             <input type='text' name="description" id="description" required />
           </div>
-          <div>
+          <div className="field-grouping">
             <label for="hashtags">Hashtags for Post</label>
             <input type='text' name="hashtags" id="hashtags" required />
           </div>
-          <div>
+          <div className="field-grouping">
             <input type="file" name="filepath" id="filepath" accept="image/png, image/jpeg" required />
           </div>
         </fieldset>
@@ -53,9 +53,8 @@ class Form extends React.Component {
           <p>By using this service you agree to abide by the terms and conditions and relinquish all your money.</p>
           <input type="checkbox" name="tandc" id="tandc" required />
         </fieldset>
-        <div>
-          <button type="submit">Submit photo</button> 
-        </div>
+
+        <button type="submit" className="btn"><span id="buttonText">Submit photo</span></button> 
       </form>
     ) 
   }

@@ -1,4 +1,87 @@
 form {
-  width: 75%;
+  width: 50%;
   margin: auto;
+  padding: 50px;
+  background: #fff;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 14px 28px #eee, 0px 10px 10px #ddd;
+}
+
+form > h2 {
+  text-align: center;
+}
+
+fieldset {
+  border: 1px solid #7378D9;
+  padding: 25px;
+}
+
+legend {
+  text-align: center;
+}
+
+button {
+  display: block;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background: #7378D9;
+  height: 50px;
+  width: 30%;
+  margin: 20px auto;
+  border-radius: 5px;
+  border: none;
+}
+
+button:after {
+	content: '';
+  position: absolute;
+	z-index: 1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#buttonText {
+  position: relative;
+  z-index: 10;
+}
+
+.field-grouping {
+  width: 90%;
+}
+
+.btn {
+	overflow: hidden;
+}
+
+.btn:after {
+	width: 0;
+	height: 101%;
+	top: 50%;
+  left: 50%;
+	background: #5ABF90;
+  opacity: 1;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.btn:hover,
+.btn:active {
+  color: #fff;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn:hover:after,
+.btn:focus:after,
+.btn:active:after {
+	width: 100%;
+  opacity: 1;
 }
