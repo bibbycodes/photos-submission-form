@@ -44,7 +44,9 @@ class Form extends React.Component {
             <input type='text' name="hashtags" id="hashtags" required />
           </div>
           <div className="field-grouping">
-            <input type="file" name="filepath" id="filepath" accept="image/png, image/jpeg" required />
+            <div className="submit-center">
+              <input type="file" name="filepath" id="filepath" accept="image/png, image/jpeg" required />
+            </div>
           </div>
         </fieldset>
 

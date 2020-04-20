@@ -36,6 +36,13 @@ button {
   border: none;
 }
 
+label {
+  float: left;
+  text-align: right;
+  width: 50%;
+  padding-right: 20px;
+}
+
 button:after {
 	content: '';
   position: absolute;
@@ -48,6 +55,13 @@ button:after {
 #buttonText {
   position: relative;
   z-index: 10;
+}
+
+.submit-center {
+  width: 50%;
+  margin: 25px auto;
+  display: flex;
+  justify-content: center;
 }
 
 .field-grouping {
