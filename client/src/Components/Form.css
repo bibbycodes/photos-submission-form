@@ -1,4 +1,5 @@
 form {
+  font-size: 16px;
   width: 50%;
   margin: auto;
   padding: 50px;
@@ -43,6 +44,12 @@ label {
   padding-right: 20px;
 }
 
+input[type=text],
+input[type=email]{
+  width: 25%;
+  height: 25px;
+}
+
 button:after {
 	content: '';
   position: absolute;
@@ -66,6 +73,9 @@ button:after {
 
 .field-grouping {
   width: 90%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .btn {
